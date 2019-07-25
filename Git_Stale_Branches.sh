@@ -1,6 +1,9 @@
 #!bash
 
 # To store the git credentials in cache 
+git config credential.helper store
+
+# To set the cache for 2 hours
 git config --global credential.helper 'cache --timeout 7200'
 
 echo Merged branches 
